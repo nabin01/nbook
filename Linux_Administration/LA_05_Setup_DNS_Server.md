@@ -1,9 +1,4 @@
----
-layout: post
-title: "How to set up DNS server and use it via client in Linux"
-date: 2022-07-02 16:02:00 +0545
-categories: linux
----
+# How to set up DNS server in Linux
 
 DNS (Domain Name System) is the Internet service that maps a domain name to its IP address and vice versa. It is the base of Internet browsing because it enables us to remember sites using hostnames and not the actual IP addresses of the servers. When you enter google.com in your browser, your DNS server comes into play to determine the corresponding IP address of google.com. Imagine having to remember the actual ip addresses of all the servers. It would make the Internet not useable at all. Therefore, DNS server is an important piece of the web. This tutorial will take you through the steps to set up a minimal DNS server and test it with A records and CName records.
 

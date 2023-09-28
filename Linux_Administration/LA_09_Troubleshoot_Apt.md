@@ -1,9 +1,4 @@
----
-layout: post
-title: "Apt troubleshooting: Package installation, and maintenance"
-date: 2022-08-14 16:30:29 +0545
-categories: linux
----
+# Troubleshooting apt: Package installation, and maintenance
 
 apt automatically provides you with some diagnostic information and the solution should intuitively come to you in some cases. See below for more information about common errors while using apt.
 

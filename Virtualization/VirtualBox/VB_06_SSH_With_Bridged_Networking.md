@@ -1,23 +1,16 @@
----
-layout: post
-title: "How to use SSH with bridged networking on VirtualBox"
-date: 2022-06-19 15:45:10 +0545
-categories: virtualization
----
+# How to use SSH with bridged networking on VirtualBox
 
 Using two virtual machines can drive your hardware to its limits. If you can run the server (or client too) in the background, i.e., without any GUI window, the amount of load on your CPU and memory will be reduced.
 
 The idea is to start your virtual machine in headless mode and use ssh to login to the server. When a virtual machine is started in headless mode, no GUI window is attached to it. Instead, it is just started on the background. Then, you can use ssh to log in to the virtual machine and do your work. 
 
-### Before we start
+## Before we start
 
 This tutorial assumes that you have a server installed inside a virtual machine and this virtual machine uses bridged networking.
 
-If not, see [here]({% post_url 2022-05-24-install-ubuntu-on-virtualbox %}) to install Ubuntu in VirtualBox and [here]({% post_url 2022-06-19-use-virtualbox-bridged-networking-for-client-server-setup %}) to make the server use bridged networking.
+## Start server in headless mode
 
-### Start server in headless mode
-
-Follow the steps below to start a guest machine in headless mode:
+Follow the steps below to start a guest machine in headless mode (without the GUI):
 
 1. List your vms.<br>
    ```
@@ -29,7 +22,7 @@ Follow the steps below to start a guest machine in headless mode:
    $ VBoxManage startvm <vm-name> --type headless
    ```
 
-### Use ssh to log in to the server
+## Use ssh to log in to the server
 
 This requires ssh server to be installed and enabled on boot so that ssh server is started and ready for use when the server boots up.
 
@@ -41,14 +34,14 @@ $ ssh <username>@<hostname>
 
 For hostname, use the IP address of the server obtained from ip or ifconfig command.
 
-### Tip
+## Tip
 You can also start your guest machine in Detachable mode, which allows you to close the GUI when it's not needed, while keeping the machine running in the background. Select your guest and start it on Detachable Start by selecting from Machine > Start in the menu bar or the drop-down arrow in the toolbar. You can then hide the window when required by selecting Continue running in the background when closing the window. Show this window again by selecting the guest and clicking on Machine > Show in the menu bar or Show in the toolbar.
 
-### Conclusion
+## Conclusion
 
 You have successfully started the server in the background and logged in to the server using ssh. This configuration can be applied to any other virtual machines.
 
-### Troubleshooting
+## Troubleshooting
 
 - Unreachable host<br>
 

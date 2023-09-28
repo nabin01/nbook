@@ -1,9 +1,4 @@
----
-layout: post
-title: "Set up git and GitHub"
-date: 2022-07-23 11:10:12 +0545
-categories: git
----
+# Setup Git and Github
 
 If this is your first time trying to use git or github, there are a few things that you need to do as follows:
 
@@ -73,8 +68,3 @@ not provide shell access.
 If you get the above output, your ssh configuration is correct.
 
 To use ssh, use the GitHub SSH link available in in Clone button in your repository on GitHub. The ssh link follows the structure git@github.com:<username>/<repository>. If you use a repository as https://github.com/<username>/<repository>, it won't use ssh and ask for username and password for HTTPs authentication. Go through the next tutorial to learn more about this!.
-
-Next: [First git repository]({% post_url 2022-07-23-git-start-a-new-repository %})
-
-Also see: [Common usage of git]({% post_url 2022-07-23-set-up-git-and-github %})
-

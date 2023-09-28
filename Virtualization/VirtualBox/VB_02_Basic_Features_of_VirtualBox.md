@@ -1,15 +1,10 @@
----
-layout: post
-title: "Virtualbox: Introduction to basic features"
-date: 2022-05-26 22:49:11 +0545
-categories: virtualization
----
+# Virtualbox: Introduction to basic features
 
 Understanding the features of virtualbox will help you manage your guest OS efficiently according to your use-case and will make troubleshooting a lot easier. Here are some of the features that you will want to know before you become a power user of VirtualBox.
 
 Note that this does not cover all the features but only those that the users need to interact with. Everything else will work out of the box as they are and should not be changed unless you know what you are doing.
 
-### System configuration and display
+## System configuration and display
 
 The first process of building a computer is to set up the motherboard. In virtual machines, all that's need to be done is to allocate processor and primary memory (RAM) that your virtual machine will use.
 
@@ -23,7 +18,7 @@ Now, go to Processor tab. Here are the basic features:
 
 - Processors: Number of processors available to the guest OS. (Multiple processors can be assigned to a virtual machine. However, if you assign more than your host's capability, VirtualBox will notify you on the bottom bar with Invalid Settings Detected.)
 
-### Storage
+## Storage
 
 The next process is to define the storage for your virtual machine. Go to Storage tab in the Settings. These are two types of connectors that connect storage mediums like a CD or a DVD and a hard drive to a virtual machine.
 
@@ -37,7 +32,7 @@ While creating a guest OS, a new hard drive must be created for this machine or 
 
 To manage drives, go to File > Virtual Media Manager or press Ctrl + D. It can be used to manage hard drives and optical disks that are (or not) attached to any guest OS, i.e. create a new one, add an existing one to a guest or release an attached drive from a guest.
 
-### Network
+## Network
 
 Go to Network tab on the Settings. There are four adapters available for use. By default, only one is enabled. These are the basic network modes that you will need to understand:
 
@@ -55,7 +50,7 @@ It is similar to Internal Networking except the host can provide DHCP service to
 
 - Port-Forwarding with NAT<br> If you need to talk to your virtual machine from outside the host (or without the GUI window), then configure the virtual machine to use port-forwarding with NAT.  This will allow multiple machines, even outside your network, to connect to your virtual machine by connecting to your host on the port specified on the Port Forwarding section of NAT.
 
-### Power on/off options
+## Power on/off options
 
 VirtualBox offers you more than one way to start and power down your guest.
 
@@ -85,7 +80,7 @@ It is rebooting the guest OS. It does not power down the guest in a graceful way
 - Pause<br>
 In this state, the guest is paused - it is not using any CPU nor it can start off new processes. However, it will still consume the memory it was consuming before this state was initiated. This is useful when you want to temporarily free the processor in your machine.
 
-### Snapshots
+## Snapshots
 
 Snapshots are similar to recovery points. The snapshot contains the states of the virtual machine at the time of creation. When restored, the machine is restored to this very state. Multiple snapshots can be created and you can switch between them as required by restoring a snapshot. Going back to a snapshot does not delete other snapshots later than that point.
 
@@ -93,6 +88,6 @@ To create, delete and restore a snapshot, select a virtual machine. Go to Machin
 
 Snapshots are very useful and can save you from lots of troubles. Create a snapshot of a safe point(unbroken system) in a guest OS so that you can go back to that state if something gets broken inside guest later. Multiple snapshots can be added as a virtual machine is upgraded. However, keep in mind that snapshots may take a big space for storage, so don't spam snapshots but use it only when essential. You can configure each virtual machine to save its snapshots where you want on the file system.
 
-### Conclusion
+## Conclusion
 
 These are the most basic features that you need to understand before working with virtual machines. Work with these regularly and see how these features fit your purpose.

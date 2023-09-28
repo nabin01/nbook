@@ -1,9 +1,4 @@
----
-layout: post
-title: "Linux: DPKG and .deb packages"
-date: 2022-08-10 10:20:32 +0545
-categories: linux
----
+# Linux: DPKG and .deb packages
 
 dpkg is the package management tool that is used in Debian and its derivatives like Ubuntu and Kali. It is a tool to install, build, remove, extract and analyze debian (.deb) packages. The front-end for dpkg is apt (Advanced packaging tool), which means that apt uses dpkg for package installation, updates, removal and more.
 

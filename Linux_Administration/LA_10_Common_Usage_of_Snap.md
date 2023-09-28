@@ -1,9 +1,4 @@
----
-layout: post
-title: "Common usage of Snap"
-date: 2022-08-10 13:11:22 +0545
-categories: linux
----
+# Common usage of Snap
 
 Snaps (snap packages) are containerized software packages that are easy to install, secure, cross-platform and dependency free. They are auto-updated. Since they contain their dependencies, they run on all major Linux platforms without modification. You just need to install snapd on your Linux distribution and you can work with snaps. The commands are independent of distributions (they are the same for all distributions).
 

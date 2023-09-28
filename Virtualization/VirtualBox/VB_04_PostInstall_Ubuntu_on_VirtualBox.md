@@ -1,13 +1,6 @@
----
-layout: post
-title: "How to install Ubuntu on VirtualBox: Post installation guide"
-date: 2022-05-24 18:10:02 +0545
-categories: virtualization
----
+# How to install Ubuntu on VirtualBox: Post installation guide
 
-If you stumbled here first, see [here]({% post_url 2022-05-24-install-ubuntu-on-virtualbox %}) to install Ubuntu inside VirtualBox.
-
-This tutorial can also be used for other guest machines. By the end of this tutorial, you will have done the following things:
+This tutorial assumes that you have a guest machine installed in your VirtualBox. It can also be used for other guest machines. By the end of this tutorial, you will have done the following things:
 
 1. Enable Auto Resize guest display as the window size changes.
 2. Create a shared folder between your host and guest.
@@ -15,9 +8,9 @@ This tutorial can also be used for other guest machines. By the end of this tuto
 4. Enable Drag and drop between your host and guest.
 5. Work with USB.
 
-### Before you start
+## Before you start
 
-Make sure you have installed an extension pack that matches the version of your VirtualBox. If you have not done this, see [here]({% post_url 2022-05-23-install-virtualbox %}) for installing VirtualBox with an extension pack.
+Make sure you have installed an extension pack that matches the version of your VirtualBox. 
 
 This features also require guest additions to be installed inside your guest OS. It gives a guest OS necessary tools to work with above mentioned features. The easiest way to do this is as follows:
 
@@ -35,11 +28,11 @@ $ sudo ./VBoxLinuxAdditions.run
 
 Reboot after this and you are ready to go.
 
-### Auto resize guest display
+## Auto resize guest display
 
 This makes your guest display adapt when you resize the guest window without the need to change the resolution every time. It makes your workflow seamlessly flawless. Check the checkbox on Auto-resize Guest Display in View menu and reboot.
 
-### Shared folders
+## Shared folders
 
 This is the most useful extended feature of VirtualBox. Since guest machines are isolated in their own environment (like another physical machine), they can not view or edit host files unless specified. This feature allows you to share folders between host and guest.
 
@@ -89,7 +82,7 @@ If you have Windows as your guest OS, it will automatically mount your folder as
 
 Now, reboot your system and navigate inside /mnt/vmshare inside your guest and you will see the files. You can add, modify and delete new files and folders as you are working directly on your host. The changes can be seen from host as well.
 
-### Shared clipboard and Drag and Drop
+## Shared clipboard and Drag and Drop
 
 Being able to copy items (not files or folders) and drag and drop items between host and guest is a huge benefit and it makes your workflow very efficient. To enable this follow the following steps:
 
@@ -97,7 +90,7 @@ Being able to copy items (not files or folders) and drag and drop items between 
 2. In General, go to Advanced tab.
 3. Under Shared Clipboard and Drag'n'Drop, choose Bidirectional.
 
-### Work with USB
+## Work with USB
 
 This features makes it possible to work with USB devices that are connected to your physical machine. It can sometimes come in handy when you have to work with infected drives. Follow the following steps to work with USB drive:
 
@@ -110,7 +103,7 @@ To eject drive and use it on host again, eject your drive from guest and uncheck
 
 Note that just like a drive can be connected to one physical machine, your drive can be connected to either host or guest but not both at the same time. To use the drive on your host (other guest machines), go to Devices > USB and click on your drive again.
 
-### Conclusion and Tips
+## Conclusion and Tips
 
 You have successfully created shared folders and worked with USB and shared clipboards among others. Keep in mind that you can do all of these using the status bar (the bar at the bottom of the window).
 

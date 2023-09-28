@@ -1,9 +1,4 @@
----
-layout: post
-title: "Git: Basic usage"
-date: 2022-07-25 09:52:12 +0545
-categories: git
----
+# Basic usage of Git
 
 The daily usage of git revolves around only a few commands: status, add, commit and push.
 
@@ -11,7 +6,7 @@ You can work with git and github using a GUI like Github Desktop, which is prett
 
 ## Before we start
 
-Make sure you have a git project (repository). Or see [here]({% post_url 2022-07-23-git-start-a-new-repository %}) to make one.
+Make sure you have a git project (repository). 
 
 Here are some technical terms:
 
@@ -90,5 +85,3 @@ Here, origin is the name of the remote URL and contains the URL of your git repo
 If the remote repository has changes that you don't in your local repository, you need to do git pull first. It is always a good idea to perform git pull before making any commits and pushing them.
 
 Don't push your every small change to GitHub. Do this after making a series of definitive changes that completes a major part of your work. If you have not pushed it yet, you can go back. But pushing a commit to github makes it a part of the project's history and is difficult to remove later.
-
-Next: [Good commit practices and .gitignore]({% post_url 2022-07-25-git-best-practices-and-gitignore %})

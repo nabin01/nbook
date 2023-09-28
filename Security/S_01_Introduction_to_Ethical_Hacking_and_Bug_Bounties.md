@@ -1,11 +1,5 @@
----
-layout: post
-title: "Introduction to ethical hacking and bug hunting"
-date: 2023-08-22 05:03:12 +0545
-categories: security
----
+# Introduction to ethical hacking and bug bounties
 
-## Introduction
 Ethical hacking is the process of challenging online businesses and organizations to various security assessments. It can be in different forms including penetration testing for organizations or businesses, bug bounty hunting, security assessments for organizations and more. It is a continuous process as systems and software are continuously developed and modified. The main reason behind ethical hacking is to find the security loopholes in your systems before a malicious actor so that you patch the loopholes before they are exploited.
 
 ## What knowledge or tools do I need beforehand?

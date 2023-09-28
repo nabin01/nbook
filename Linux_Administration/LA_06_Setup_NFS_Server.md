@@ -1,9 +1,4 @@
----
-layout: post
-title: "How to set up NFS server in Linux"
-date: 2022-07-02 12:15:39 +0545
-categories: linux
----
+# How to set up NFS server in Linux
 
 NFS or Network File System is the distributed file system protocol that allows a system to access remote directories over the network, just like accessing a local file system. It allows you to store your files in a different location (server) and read or write to that space from multiple clients. It is also useful in organizations where the shared resources must be accessed regularly. However, it should be noted that the protocol is not itself encrypted. Hence, when using NFS over a public network, a VPN or other encrypted tunnels are required to protect your data.
 
@@ -272,7 +267,7 @@ The output of `df` command should not list the shared drives now that they have 
 
 We have successfully exported two directories using NFS server. Remember that this is only a minimal configuration. Read the man pages for nfs for more detail about available options and use the ones that suit your purposes.
 
-# Troubleshooting
+## Troubleshooting
 
 In case of any errors, check your work as follows:
 

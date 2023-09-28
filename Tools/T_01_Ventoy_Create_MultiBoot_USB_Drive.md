@@ -1,9 +1,4 @@
----
-layout: post
-title: "How to create a multiboot USB using Ventoy"
-date: 2023-08-02 11:10:02 +0545
-categories: linux
----
+# How to create a multiboot USB using Ventoy
 
 Ventoy is an open source tool to create bootable USB drive for ISO/WIM/IMG/VHD(x)/EFI files. After many years for using other tools (and writing my own) to create USB bootable drives in both Windows and Linxu, Ventoy is now my favorite tool for this purpose because it is super easy to install, use, and update.
 

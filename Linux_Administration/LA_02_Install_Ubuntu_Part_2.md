@@ -1,11 +1,4 @@
----
-layout: post
-title: "How to install Ubuntu: Post installation guide"
-date: 2022-05-24 14:20:22 +0545
-categories: linux
----
-
-If you stumbled here first, see [here]({% post_url 2022-05-24-install-ubuntu %}) to install Ubuntu.
+# How to install Ubuntu: Post installation guide
 
 Here is a list of things that we will do in this tutorial:
 
@@ -16,7 +9,7 @@ Here is a list of things that we will do in this tutorial:
 5. Install useful applications.
 6. Customize your look and feel.
 
-### 1. Change root password
+## 1. Change root password
 
 The account you set up during installation is a normal account. It does not have any superuser (administrative) privileges. The administrative account in Linux (and all UNIX variants) is called the root account, superuser, or simply root. The root user has the highest privilege, and access to all files. Therefore, it controls everything inside Linux.
 
@@ -34,7 +27,7 @@ Here are a few important things to keep in mind regarding the root account:
 - Use sudo command for all tasks that require administrative privilege.
 - Use a strong root password and don't share it with anyone.
 
-### 2. Update and upgrade Ubuntu
+## 2. Update and upgrade Ubuntu
 
 First, we are going to add 32-bit (i386) architecture support so that we can install and use 32-bit packages as well.
 
@@ -52,7 +45,7 @@ The update command only fetches the list for any updates based on repositories d
 
 You can also update your system using GUI. Open Ubuntu Software by searching for it after pressing the Super key (Windows key is called Super key). Go to Updates. If there are any updates, select which you want to apply and click on Apply to make the changes.
 
-### 3. Install drivers
+## 3. Install drivers
 
 This step is crucial for those who have Nvidia (or other) graphic cards and other proprietary hardware. The easiest way to add drivers is to open up Software and Updates program.
 
@@ -60,7 +53,7 @@ You can choose the repository, choose how you get updates, and more. We are inte
 
 Select which drivers you want to install and click on Apply Changes.
 
-### 4. Install your favorite browser
+## 4. Install your favorite browser
 
 Ubuntu 20.04 comes with Firefox as the default browser. However, you can install any browser that you prefer.
 
@@ -74,11 +67,11 @@ The second way is to use GUI. Open up Ubuntu Software. Search for Chromium brows
 
 Once installed, Chromium can be launched from Show Applications and searching for it.
 
-### 5. Install useful applications
+## 5. Install useful applications
 
 Even though Ubuntu comes with lots of applications by default, you will want to install more applications that you require. You can install the following packages using apt, snap or Ubuntu Software:
 
-#### Using apt:
+### Using apt:
 
 VLC - A multimedia player that supports most multimedia files and streaming protocols
 
@@ -86,7 +79,7 @@ VLC - A multimedia player that supports most multimedia files and streaming prot
 $ sudo apt install vlc -y
 ```
 
-#### Using snap:
+### Using snap:
 
 Viber - Instant messaging app
 
@@ -95,7 +88,7 @@ $ snap search viber
 $ sudo snap install viber-unofficial
 ```
 
-#### Using Ubuntu Software:
+### Using Ubuntu Software:
 
 Visual Studio Code - A favorable general-purpose highly efficient code editor.
 
@@ -103,7 +96,7 @@ Search for Visual Studio Code in Ubuntu Software. Click on Visual Studio Code to
 
 You can search for and install other programs in similar ways.
 
-### 6. Customize your look and feel (Optional)
+## 6. Customize your look and feel (Optional)
 
 Gnome Tweak Tool gives you the extra flexibility of customizing your device. It allows you to change appearance, icon, and cursor themes, customize title bars, top bars, fonts, keyboard/mouse behaviors, and more. Install tweak tools using the command below:
 
@@ -138,7 +131,7 @@ Here are some other things that I like to do:
 
 Make other changes that you want and reboot!
 
-### Conclusion
+## Conclusion
 
 You have successfully learned how to install programs, change default settings, change wallpapers, change passwords, and keep your system up to date. Here are some tips to get you started in Ubuntu (or Linux):
 

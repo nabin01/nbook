@@ -1,9 +1,5 @@
----
-layout: post
-title: "Common usage of apt"
-date: 2022-08-14 12:15:00 +0545
-categories: linux
----
+# Common usage of apt
+
 apt (advanced packaging tool) is a command-line utility used for managing packages in Ubuntu (any Debian-based distros). The most common uses of apt are to install packages and update your system. This tutorial provides this and some other uses of apt that help beginners get familiar with apt.
 
 ## Before we start

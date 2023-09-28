@@ -1,9 +1,4 @@
----
-layout: post
-title: "Start a new git repository"
-date: 2022-07-23 13:00:22 +0545
-categories: git
----
+# Start a new Git repository
 
 When you start a new project, always do one of the following:
 - Always start off a project with a git repository.
@@ -76,8 +71,6 @@ SSH url: git@github.com:\<username\>/\<repository\>.git
 $ git clone git@github.com:<username>/<repository>.git
 ```
 
-
-
 ## Use git locally
 
 You can use git locally as well (without hosting your project on GitHub). This can be extremely useful to manage your local projects. See below.
@@ -139,5 +132,3 @@ If you cloned a GitHub repository, push your commits to the GitHub repository wi
 ```
 $ git push origin main
 ```
-
-Next: [Common usage of git]({% post_url 2022-07-25-git-basic-usage %})

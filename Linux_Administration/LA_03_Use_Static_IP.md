@@ -1,9 +1,4 @@
----
-layout: post
-title: "How to set up Linux (Ubuntu) to use static IP address"
-date: 2022-06-21 10:40:09 +0545
-categories: linux
----
+# How to set up Linux (Ubuntu) to use static IP address
 
 In the real environment, a server needs to be accessible to many clients within and outside of the organization and even from different parts of the world. Imagine how troublesome it would be if the server changed its IP address every time on boot. It would practically be impossible to use the server. Therefore, a server must have a static (fixed) IP address that does not change with every boot.
 
@@ -12,7 +7,7 @@ This tutorial takes you through the steps required to set up Ubuntu Server to us
 - [`netplan`](#using-netplan-ubuntu-1804-and-higher) (default on Ubuntu)
 - [`/etc/network/interfaces`](#using-etcnetworkinterfaces-older-than-ubuntu-1804).
 
-### Using Netplan (Ubuntu 18.04 and higher)
+## Using Netplan (Ubuntu 18.04 and higher)
 
 Netplan was introduced in Ubuntu 18.04 and it replaced `ifupdown`. It uses a configuration file inside `/etc/netplan/` with an extension .yaml. These configuration inside `/etc/netplan` persists on reboots.
 
@@ -73,7 +68,7 @@ If you run into some errors, use the following to get more information:
 $ sudo netplan --debug apply
 ```
 
-#### Check new ip
+### Check new ip
 
 Use one of the following to see if the IP address has been updated according to your configuration. The interfaces are named: eth0, wlan0, enp0s1, wlp0s1 and so on. The IP address is similar to 192.168.1.5 after the term 'inet'.
 
@@ -82,7 +77,7 @@ $ ip addr show
 $ ifconfig
 ```
 
-### Using `/etc/network/interfaces` (Older than Ubuntu 18.04)
+## Using `/etc/network/interfaces` (Older than Ubuntu 18.04)
 
 This is an old approach since the newer versions of Ubuntu uses netplan by default (since Ubuntu 18.04). Therefore, the following packages need to be installed on the newer versions.
 
@@ -96,7 +91,7 @@ $ sudo apt install ifupdown net-tools -y
 
 Installing `ifupdown` will also generate `/etc/network/interfaces` file. A reboot is necessary. If this file has not been generated, do not continue. Troubleshoot for ifupdown (eg. purge `ifupdown` and install it again).
 
-#### Configure `/etc/network/interfaces`
+### Configure `/etc/network/interfaces`
 
 The generated `/etc/network/interfaces` file typically contains at least the following:
 
@@ -163,7 +158,7 @@ $ sudo ifdown enp0s3 && sudo ifup enp0s3
 
 Check your new IP address using ip addr show or ifconfig in a terminal.
 
-### Ubuntu Desktop: Set up static IP address using GUI
+## Ubuntu Desktop: Set up static IP address using GUI
 
 Ubuntu Desktop can be configured to use a static IP address from GUI using network settings. Since the desktop versions are mostly used as clients, hence, no static configuration is required. However, if you use this as server, you can set the static IP address using the Settings for your network.
 
@@ -174,13 +169,13 @@ Ubuntu Desktop can be configured to use a static IP address from GUI using netwo
 5. This configuration persists on boot as well.
 6. Check the new ip address in a terminal or under Details of the same settings window:
 
-### Conclusion
+## Conclusion
 
 You have successfully configured an interface to get a static IP address every time. Using the configuration files make the configuration persist on reboots.
 
 Don't use both `netplan` and `ifupdown`. Use `netplan` by default. If you want to experiment with `ifupdown`, remove `netplan` (or its configuration file). When the netplan configuration file is not found, the system will look at `/etc/network/interfaces`.
 
-### Troubleshooting
+## Troubleshooting
 
 - If you don't get the new IP address as per your configuration file, flush the interface and then restart the interface (bring it down and then up).
 

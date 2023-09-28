@@ -1,9 +1,4 @@
----
-layout: post
-title: "How to set up DHCP server in Linux"
-date: 2022-07-01 20:10:19 +0545
-categories: linux
----
+# How to set up DHCP server in Linux
 
 With a dhcp server set up in a LAN, new devices will get IP addresses automatically when they connect to the network. This saves the network administrator the hassle to manually enumerate each device in the network (eg. a new laptop or mobile phone, which is very common these days).
 
@@ -25,8 +20,6 @@ See the troubleshooting section below if you run into any problems.
 ### Step 1: Configure a static IP address
 
 Your server needs to have a static IP address (as good practice and for saving you from lots of trouble of changing IP addresses later, especially in a real environment).
-
-If you haven't, see [here]({% post_url 2022-06-21-use-static-ip-address-in-linux %}) for how to configure an interface to use a static IP address.
 
 ### Step 2: Install the dhcp server
 

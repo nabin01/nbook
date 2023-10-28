@@ -1,13 +1,5 @@
 # Hacks and Useful Snippets
 
-## Windows
-
-To bring back old context menu on Windows 11,  run cmd as an administrator and enter the following command:
-
-```
-$ reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
-```
-
 ## Linux
 
 ### GNOME
